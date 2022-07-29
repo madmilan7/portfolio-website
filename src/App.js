@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Services from './components/Services';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Banner />
       <Services />
+      <Experience />
     </div>
   );
 }
