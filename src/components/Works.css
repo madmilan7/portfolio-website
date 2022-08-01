@@ -1,0 +1,131 @@
+.works {
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 13rem;
+    margin-top: 9rem;
+}
+
+.works__awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.works__awesome >:nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.works__awesome >:nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.works__awesome >:nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.works__button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+/* right side */
+.works__icons {
+    position: relative;
+}
+
+.works__mainCircle {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    left: 20rem;
+    top: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: var(--smboxShadow);
+}
+
+.works__circle {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--smboxShadow);
+    background: #fff;
+}
+
+.works__circle:nth-of-type(1) {
+    left: 6rem;
+    top: -3rem;
+}
+
+.works__circle:nth-of-type(2) {
+    left: -3rem;
+    top: 6rem;
+}
+
+.works__circle:nth-of-type(3) {
+    left: 6rem;
+    top: 6rem;
+}
+
+.works__circle:nth-of-type(4) {
+    left: 15rem;
+    top: 6rem;
+}
+
+.works__circle:nth-of-type(5) {
+    left: 6rem;
+    top: 14rem;
+}
+
+.works__circle > img {
+    transform: scale(0.6);
+}
+
+.works__backCircle {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blueCircle {
+    background: #1949b8;
+    top: 0;
+    left: 30rem;
+}
+
+.yellowCircle {
+    background: #f5c32c;
+    top: 8rem;
+    left: 30rem;
+}
+
+.works__blur-1 {
+    background: #c1f5ff;
+    top: 13rem;
+    left: -18rem;
+    width: 22rem;
+    height: 14rem;
+}
+
+.works__blur-2 {
+    background: var(--purple);
+    width: 22rem;
+    height: 14rem;
+    top: 2rem;
+    left: 8rem;
+}

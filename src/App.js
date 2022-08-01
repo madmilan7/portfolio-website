@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Services from './components/Services';
 import Experience from './components/Experience';
+import Works from './components/Works';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Services />
       <Experience />
+      <Works />
     </div>
   );
 }

@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-
 }
 
 .services__awesome>:nth-child(1) {
