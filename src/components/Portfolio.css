@@ -1,0 +1,39 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.portfolio span:nth-of-type(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.portfolio span:nth-of-type(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.portfolio .swiper {
+    overflow: visible !important;
+}
+
+.portfolio__slider {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.portfolio__slider .swiper-slide {
+    width: 20rem !important;
+    margin-right: 0 !important;
+}
+
+.portfolio img {
+    width: 19rem;
+    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
