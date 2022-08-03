@@ -9,6 +9,7 @@ import Experience from './components/Experience';
 import Works from './components/Works';
 import Portfolio from './components/Portfolio';
 import Comments from './components/Comments';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Works />
       <Portfolio />
       <Comments />
+      <Contact />
     </div>
   );
 }
