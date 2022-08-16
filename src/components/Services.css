@@ -13,7 +13,7 @@
 }
 
 .services__awesome>:nth-child(1) {
-    color: var(--black);
+    /* color: var(--black); */
     font-weight: bold;
     font-size: 2.5rem;
 }
@@ -68,8 +68,8 @@
 
 .services__blur-2 {
     background: var(--purple);
-    left: 14rem;
-    top: 8rem;
+    left: 16rem;
+    top: 7rem;
     width: 22rem;
     height: 14rem;
 }

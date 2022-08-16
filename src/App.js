@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
 
 // Components
 import Navbar from './components/Navbar';
@@ -12,19 +14,50 @@ import Comments from './components/Comments';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
+const getDesignTokens = (mode) => ({
+  palette: {
+    mode,
+    ...(mode === 'dark' && {
+      text: {
+        primary: '#fff'
+      }
+    }),
+    ...(mode === 'light') && {
+      text: {
+        default: '#242D49',
+        secondary: '#788097'
+      }
+    }
+  }
+});
+
+const App = () => {
+
+  const [mode, setMode] = useState('light');
+  const darkModeTheme = createTheme(getDesignTokens(mode));
+
   return (
-    <div className="App">
-      <Navbar />
-      <Banner />
-      <Services />
-      <Experience />
-      <Works />
-      <Portfolio />
-      <Comments />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider theme={darkModeTheme}>
+      <CssBaseline />
+      <div
+        className="App">
+        <Navbar
+          change={() => { setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light')) }}
+          check={mode}
+          sx={{
+            color: 'text.primary'
+          }}
+        />
+        <Banner sx={{ color: 'text.primary' }} />
+        <Services sx={{ color: 'text.primary' }} bgcolor={darkModeTheme} />
+        <Experience />
+        <Works sx={{ color: 'text.primary' }} />
+        <Portfolio sx={{ color: 'text.primary' }} />
+        <Comments sx={{ color: 'text.primary' }} />
+        <Contact sx={{ color: 'text.primary' }} />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

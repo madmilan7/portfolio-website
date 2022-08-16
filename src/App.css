@@ -1,6 +1,6 @@
 :root
 {
-  --yellow: #F5C32C;
+    --yellow: #F5C32C;
     --orange : #FCA61F;
     --black : #242D49;
     --gray : #788097;
@@ -14,7 +14,6 @@
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
 }
 
 .button {

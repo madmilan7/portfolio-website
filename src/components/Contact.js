@@ -6,7 +6,7 @@ const Contact = () => {
         <div className='contact'>
             <div className='contact__left'>
                 <div className='contact__title'>
-                    <span>Get in touch</span>
+                    <span>Get in touch</span> 
                     <span>Contact me</span>
                     <div className='blur contact__blur-1'></div>
                 </div>

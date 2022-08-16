@@ -1,12 +1,15 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = () => {
+// Components
+import Toggle from './Toggle';
+
+const Navbar = ({ check, change }) => {
     return (
         <div className='navbar'>
             <div className='navbar__toggle'>
-                <div className='navbar__name'>Andrew</div>
-                <span>toggle</span>
+                <div className='navbar__name'>MadMilan</div>
+                <Toggle check={check} change={change} />
             </div>
             <div className='navbar__menu'>
                 <div className='navbar__list'>

@@ -1,9 +1,6 @@
 import React from 'react';
 import './FloatDiv.css';
 
-// Images
-
-
 const FloatDiv = ({ image, txt1, txt2 }) => {
     return (
         <div className='floatdiv'>

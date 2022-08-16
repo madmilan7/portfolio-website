@@ -56,10 +56,6 @@
     object-fit: cover;
 }
 
-.comments__slide span {
-    color: var(--gray);
-}
-
 .comments .swiper {
     width: 100%;
     height: 70%;

@@ -29,7 +29,7 @@ const Services = () => {
                     <Card
                         emoji={heartEmoji}
                         header={'Design'}
-                        desc={'Figma, Scetch, PhotoShop, Adobe XD'}
+                        desc={'Figma, Scetch, Adobe XD'}
                     />
                 </div>
                 <div>
