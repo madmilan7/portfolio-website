@@ -45,7 +45,7 @@ const Comments = () => {
     ]
 
     return (
-        <div className='comments'>
+        <div className='comments' id='Testimonials'>
             <div className='comments__header'>
                 <span>Clients always get </span>
                 <span>Exceptional Work </span>

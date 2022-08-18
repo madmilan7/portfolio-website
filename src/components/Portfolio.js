@@ -11,7 +11,7 @@ import musicApp from '../assets/images/musicapp.png';
 
 const Portfolio = () => {
     return (
-        <div className='portfolio'>
+        <div className='portfolio' id='Portfolio'>
             {/* header */}
             <span>Recent Projects</span>
             <span>Portfolio</span>

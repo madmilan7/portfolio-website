@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css';
+import { motion } from 'framer-motion';
 
 // Components
 import FloatDiv from './FloatDiv';
@@ -16,6 +17,9 @@ import crown from '../assets/images/crown.png';
 import glassesemoji from '../assets/images/glassesimoji.png';
 
 const Banner = () => {
+
+    const transition = { duration: 2, type: 'spring' };
+
     return (
         <div className='banner'>
             {/* leftSide banner */}
@@ -41,13 +45,29 @@ const Banner = () => {
                 <img src={vector1} alt='blue' />
                 <img src={vector2} alt='yellow' />
                 <img src={boy} alt='boy' />
-                <img src={glassesemoji} alt='emoji' />
-                <div className='floatdivpos1'>
+                <motion.img
+                    src={glassesemoji}
+                    alt='emoji'
+                    initial={{ left: '-36%' }}
+                    whileInView={{ left: '-24%' }}
+                    transition={transition}
+                />
+                <motion.div
+                    className='floatdivpos1'
+                    initial={{ top: '-4%', left: '74%' }}
+                    whileInView={{ left: '68%' }}
+                    transition={transition}
+                >
                     <FloatDiv image={crown} txt1='Web' txt2='Developer' />
-                </div>
-                <div className='floatdivpos2'>
+                </motion.div>
+                <motion.div
+                    className='floatdivpos2'
+                    initial={{left: '9rem', top: '18rem'}}
+                    whileInView={{left: '2rem'}}
+                    transition={transition}
+                >
                     <FloatDiv image={thumbup} txt1='Best Design' txt2='Award' />
-                </div>
+                </motion.div>
                 {/* blur div */}
                 <div className='blur blur-1'></div>
                 <div className='blur blur-2'></div>

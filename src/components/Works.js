@@ -1,5 +1,6 @@
 import React from 'react';
 import './Works.css';
+import { motion } from 'framer-motion';
 
 // Images 
 import upWork from '../assets/images/Upwork.png';
@@ -25,7 +26,14 @@ const Works = () => {
             </div>
             {/* right side */}
             <div className='works__icons'>
-                <div className='works__mainCircle'>
+                <motion.div
+                    className='works__mainCircle'
+                    initial={{ rotate: 45 }}
+                    whileInView={{ rotate: 0 }}
+                    viewport={{ margin: '-40px' }}
+                    transition={{ duration: 3.5, type: 'spring' }}
+                    
+                >
                     <div className='works__circle'>
                         <img src={upWork} alt='upwork' />
                     </div>
@@ -41,7 +49,7 @@ const Works = () => {
                     <div className='works__circle'>
                         <img src={shopify} alt='shopify' />
                     </div>
-                </div>
+                </motion.div>
                 {/* background circle */}
                 <div className='works__backCircle blueCircle'></div>
                 <div className='works__backCircle yellowCircle'></div>
