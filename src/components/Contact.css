@@ -67,3 +67,38 @@ textarea {
     height: 14rem;
     right: 10rem;
 }
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    .contact {
+        flex-direction: column;
+        height: 35rem;
+        gap: 5rem;
+    }
+
+    .contact__title span {
+        text-align: center;
+    }
+
+    .contact__form {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact__title span {
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact {
+        gap: 1rem;
+    }
+
+    .contact__form {
+        transform: scale(0.8);
+    }
+}

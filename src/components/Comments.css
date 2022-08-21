@@ -70,3 +70,25 @@
 .comments .swiper-pagination-bullet-active {
     background: var(--orange);
 }
+
+/* Responsive */
+@media only screen and (max-width: 1440px) {
+    .comments {
+        height: 35rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .comments {
+        padding: 0;
+    }
+
+    .comments__slide img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .comments__slide span {
+        font-size: 0.8rem;
+    }
+}

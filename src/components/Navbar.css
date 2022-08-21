@@ -40,5 +40,15 @@
     color: var(--orange);
 }
 
+/* responsive */
+@media only screen and (max-width: 1100px) {
+    .navbar__menu {
+      display: none;
+    }
+    .navbar__toggle{
+        justify-content: space-between;
+    }
+  }
+
 
 

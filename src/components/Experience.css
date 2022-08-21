@@ -44,3 +44,12 @@
 .achievement span:nth-of-type(2) {
     color: var(--orange);
 }
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .experience {
+        flex-direction: column;
+        gap: 2rem;
+        height: 25rem;
+    }
+}

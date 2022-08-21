@@ -73,3 +73,30 @@
     width: 22rem;
     height: 14rem;
 }
+
+/* Responsive */
+@media only screen and (max-width: 1100px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .services__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+        position: static;
+    }
+
+    .services__button {
+        margin: 0 auto;
+    }
+
+    .services__cards>* {
+        position: static !important; 
+    }
+}
+
