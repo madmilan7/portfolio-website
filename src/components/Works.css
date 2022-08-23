@@ -156,6 +156,10 @@
         align-items: flex-start;
         transform: scale(0.7);
     }
+
+    .works__button {
+        margin: 1rem auto;
+    }
 }
 
 @media only screen and (max-width: 480px) {
